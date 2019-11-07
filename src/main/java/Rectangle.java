@@ -8,8 +8,8 @@ public class Rectangle implements Figure {
         this.b = b;
     }
 
-    public Rectangle() {
-    }
+//    public Rectangle() {
+//    }
 
 
     @Override

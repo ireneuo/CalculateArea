@@ -2,7 +2,7 @@ public class Circle implements Figure {
 
     private double r;
 
-    public Circle(double r){
+    public Circle(double r) {
         this.r = r;
     }
 

@@ -1,9 +1,7 @@
-.idea/
-target/
-
+.idea/*
+target/*
+*.xml
 
 *.iws
-*
-.iml
-*
-.ipr
+*.iml
+*.ipr
