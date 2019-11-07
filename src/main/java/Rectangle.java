@@ -1,14 +1,21 @@
-import java.util.Scanner;
-
 public class Rectangle implements Figure {
 
+    private double a;
+    private double b;
 
-    public double calculateArea() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Podaj długość boku a:");
-        double a = scanner.nextInt();
-        System.out.println("Podaj długość boku b:");
-        double b = scanner.nextInt();;
-        return a*b;
+    public Rectangle(double a, double b){
+        this.a = a;
+        this.b = b;
     }
+
+    public Rectangle() {
+    }
+
+
+    @Override
+    public double calculateArea() {
+        double calculatedArea = a * b;
+        return calculatedArea;
+    }
+
 }
