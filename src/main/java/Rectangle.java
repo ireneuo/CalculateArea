@@ -8,14 +8,9 @@ public class Rectangle implements Figure {
         this.b = b;
     }
 
-//    public Rectangle() {
-//    }
-
-
     @Override
     public double calculateArea() {
         double calculatedArea = a * b;
         return calculatedArea;
     }
-
 }
