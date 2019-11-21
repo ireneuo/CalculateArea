@@ -7,7 +7,7 @@ class TriangleTest {
     void calculateAreaTheBottomShouldNotBeZero() {
 
         //given
-        Triangle newTriiangle = new Triangle(3,4);
+        Triangle newTriiangle = new Triangle(0,5);
 
         //when
         double calculatedArea = newTriiangle.calculateArea();
@@ -20,7 +20,7 @@ class TriangleTest {
     void calculateAreaTheHeightShouldNotBeZero() {
 
         //given
-        Triangle newTriiangle = new Triangle(5,2);
+        Triangle newTriiangle = new Triangle(5,0);
 
         //when
         double calculatedArea = newTriiangle.calculateArea();
