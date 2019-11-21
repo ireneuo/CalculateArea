@@ -1,13 +1,15 @@
-import java.util.Scanner;
+public class Triangle implements Figure {
 
-public class Triangle implements Figure{
+    private double a;
+    private double h;
 
+    public Triangle(double a, double h){
+        this.a = a;
+        this.h = h;
+    }
+
+    @Override
     public double calculateArea() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Podaj długość podstawy trójkąta:");
-        double a = scanner.nextInt();
-        System.out.println("Podaj wyskość trojkąta:");
-        double b = scanner.nextInt();;
-        return a/2*b;
+        return a/2*h;
     }
 }

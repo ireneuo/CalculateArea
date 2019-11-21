@@ -1,39 +1,27 @@
-import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Wybierz figurę: \n 1. Kwadrat.\n 2. Prostokąt.\n 3. Trójkąt.\n 4. Trapez.\n 5. Okrąg.");
-        int choose = scanner.nextInt();
 
-        while (choose < 1 || choose > 5){
-            System.out.println("Nieprawidlowy wybór, Wybierz jeszcze raz:");
-            choose = scanner.nextInt();
-        }
+        Figure circle = new Circle(3);
+        circle.calculateArea();
 
-            switch (choose) {
-                case 1:
-                    Square squareArea = new Square();
-                    System.out.println("Pole kwadratu wynosi: " + squareArea.calculateArea());
-                    break;
-                case 2:
-                    Rectangle rectangleArea = new Rectangle();
-                    System.out.println("Pole prostokata wynosi: " + rectangleArea.calculateArea());
-                    break;
-                case 3:
-                    Triangle triangleArea = new Triangle();
-                    System.out.println("Pole trójkąta wynosi: " + triangleArea.calculateArea());
-                    break;
-                case 4:
-                    Trapezoid trapezoidArea = new Trapezoid();
-                    System.out.println("Pole trapezu wynosi: " + trapezoidArea.calculateArea());
-                    break;
-                case 5:
-                    Circle circleArea = new Circle();
-                    System.out.println("Pole okręgu wynosi: " + circleArea.calculateArea());
-                    break;
-        }
+        Figure rectangle = new Rectangle(4,6);
+        rectangle.calculateArea();
+
+        Figure square = new Square(4);
+        rectangle.calculateArea();
+
+        Figure trapezoid = new Trapezoid(3,5,2);
+        trapezoid.calculateArea();
+
+        Figure triangle = new Triangle(5, 9);
+        triangle.calculateArea();
+
+        System.out.println("Pole okregu wynosi: " + circle.calculateArea());
+        System.out.println("Pole prostokąta wynosi: " + rectangle.calculateArea());
+        System.out.println("Pole kwadratu wynosi: " + square.calculateArea());
+        System.out.println("Pole trapezu wynosi: " + trapezoid.calculateArea());
+        System.out.println("Pole trójkata wynosi: " + triangle.calculateArea());
     }
 }
 

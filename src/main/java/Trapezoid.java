@@ -1,16 +1,17 @@
-import java.util.Scanner;
-
 public class Trapezoid implements Figure {
 
-    public double calculateArea() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Podaj długość podstawy a:");
-        double a = scanner.nextInt();
-        System.out.println("Podaj długość podstawy b:");
-        double b = scanner.nextInt();;
-        System.out.println("Podaj wysokość b:");
-        double c = scanner.nextInt();;
-        return (a+b)/2*c;
+    private double a;
+    private double b;
+    private double c;
+
+    public Trapezoid(double a, double b, double c){
+        this.a = a;
+        this.b = b;
+        this.c = c;
     }
 
+    @Override
+    public double calculateArea() {
+        return (a+b)/2*c;
+    }
 }

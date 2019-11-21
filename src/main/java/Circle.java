@@ -1,14 +1,13 @@
-import java.util.Scanner;
-
-import static java.lang.Math.*;
-
 public class Circle implements Figure {
 
-    public double calculateArea() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Podaj promień okręgu");
-        double r = scanner.nextInt();
+    private double r;
 
-        return PI*pow(r,2);
+    public Circle(double r) {
+        this.r = r;
+    }
+
+    @Override
+    public double calculateArea() {
+            return Math.PI * Math.pow(r, 2);
     }
 }
