@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -19,11 +17,11 @@ public class Main {
         Figure triangle = new Triangle(5, 9);
         triangle.calculateArea();
 
-        System.out.println("Pole okregu wynosi: "+circle.calculateArea());
-        System.out.println("Pole prostokąta wynosi: "+rectangle.calculateArea());
-        System.out.println("Pole kwadratu wynosi: "+square.calculateArea());
-        System.out.println("Pole trapezu wynosi: "+trapezoid.calculateArea());
-        System.out.println("Pole trójkata wynosi: "+triangle.calculateArea());
+        System.out.println("Pole okregu wynosi: " + circle.calculateArea());
+        System.out.println("Pole prostokąta wynosi: " + rectangle.calculateArea());
+        System.out.println("Pole kwadratu wynosi: " + square.calculateArea());
+        System.out.println("Pole trapezu wynosi: " + trapezoid.calculateArea());
+        System.out.println("Pole trójkata wynosi: " + triangle.calculateArea());
     }
 }
 

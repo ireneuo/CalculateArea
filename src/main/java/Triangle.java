@@ -10,7 +10,6 @@ public class Triangle implements Figure {
 
     @Override
     public double calculateArea() {
-        double calculatedArea = a/2*h;
-        return calculatedArea;
+        return a/2*h;
     }
 }
